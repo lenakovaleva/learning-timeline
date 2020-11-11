@@ -1,3 +1,5 @@
 module.exports = {
-    publicPath: '/learning-timeline/'
-  }
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/learning-timeline/'
+    : '/'
+}
